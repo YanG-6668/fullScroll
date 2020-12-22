@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Full Scroll</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
+
   <body>
-    <h1>Hello Mate Academy</h1>
+
+    <!-- start header -->
+    <header class="header">
+      <!-- start nav -->
+      <nav class="nav">
+        <!-- start nav__list-->
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link is-active" data-nav-link="1">fullPage 1</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-nav-link="2">fullPage 2</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-nav-link="3">fullPage 3</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-nav-link="4">fullPage 4</a></li>
+        </ul>
+        <!-- end  nav__list-->
+      </nav>
+      <!-- end nav -->
+    </header>
+    <!-- end header -->
+
+    <!-- start  side-panel-->
+    <div class="side-panel">
+      <!-- start  dots-->
+      <nav class="dots">
+        <!-- start  dots__list-->
+        <ul class="dots__list">
+          <li class="dots__item"><a href="#" class="dots__link is-active" data-dots="1"></a></li>
+          <li class="dots__item"><a href="#" class="dots__link" data-dots="2"></a></li>
+          <li class="dots__item"><a href="#" class="dots__link" data-dots="3"></a></li>
+          <li class="dots__item"><a href="#" class="dots__link" data-dots="4"></a></li>
+        </ul>
+        <!-- end dots__list-->
+      </nav>
+      <!-- end  dots-->
+    </div>
+    <!-- end side-panel -->
+    <!-- start fullScroll -->
+    <div class="fullScroll" id="fullScroll">
+      <!-- start section -->
+      <div class="section" data-section="1">
+        <h1 class="section__title">fullPage 1</h1>
+      </div>
+      <!-- end section -->
+      <!-- start section -->
+      <div class="section" data-section="2">
+        <h1 class="section__title">fullPage 2</h1>
+      </div>
+      <!-- end section -->
+      <!-- start section -->
+      <div class="section" data-section="3">
+        <h1 class="section__title">fullPage 3</h1>
+      </div>
+      <!-- end section -->
+      <!-- start section -->
+      <div class="section" data-section="4">
+        <h1 class="section__title">fullPage 4</h1>
+      </div>
+      <!-- end section -->
+    </div>
+    <!-- end fullScroll -->
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
+
 </html>

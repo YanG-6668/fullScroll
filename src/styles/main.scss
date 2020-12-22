@@ -1,7 +1,118 @@
+@import "reset";
 @import "utils";
 @import "fonts";
 @import "typography";
 
 body {
   background: $c-gray;
+  overflow: hidden;
+  margin: 0;
+  font-family: "Limelight", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.header {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.nav {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  
+  &__link {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+
+    &.is-active {
+      color: red;
+    }
+  }
+}
+
+.side-panel {
+  position: fixed;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 24px;
+}
+
+.dots {
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: background-color 0.5s ease;
+
+    &.is-active {
+      background-color: red;
+    }
+  }
+}
+
+.fullScroll {
+  position: relative;
+  overflow: hidden;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  cursor: default;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+
+  &:nth-child(1) {
+    background-color: #0f0;
+  }
+
+  &:nth-child(2) {
+    background-color: #f0f;
+  }
+
+  &:nth-child(3) {
+    background-color: #0ff;
+  }
+
+  &:nth-child(4) {
+    background-color: #00f;
+  }
 }
